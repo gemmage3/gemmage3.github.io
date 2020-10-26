@@ -8492,3 +8492,207 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+.portfolio__item__hide {
+  -webkit-animation: itemHide 1.1s forwards cubic-bezier(.25,.1,.25,1);
+          animation: itemHide 1.1s forwards cubic-bezier(.25,.1,.25,1);
+}
+.portfolio__item__show {
+  -webkit-animation: itemShow 1.1s forwards cubic-bezier(.25,.1,.25,1);
+          animation: itemShow 1.1s forwards cubic-bezier(.25,.1,.25,1);
+}
+
+/* .portfolio__item */
+@-webkit-keyframes itemHide {
+  0% {
+    -webkit-transform: translateX(0%) scale(1, 1);
+            transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-20%) scale(.8, .8);
+            transform: translateX(-20%) scale(.8, .8);
+    opacity: 0.6;
+  }
+}
+@keyframes itemHide {
+  0% {
+    -webkit-transform: translateX(0%) scale(1, 1);
+            transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-20%) scale(.8, .8);
+            transform: translateX(-20%) scale(.8, .8);
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes itemShow {
+  0% {
+    -webkit-transform: translateX(-20%) scale(.8, .8);
+            transform: translateX(-20%) scale(.8, .8);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(0%) scale(1, 1);
+            transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes itemShow {
+  0% {
+    -webkit-transform: translateX(-20%) scale(.8, .8);
+            transform: translateX(-20%) scale(.8, .8);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateX(0%) scale(1, 1);
+            transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* about-me */
+@-webkit-keyframes slide {
+  0%, 100% {
+    right: 0;
+  }
+  50% {
+    right: -100%;
+  }
+}
+@keyframes slide {
+  0%, 100% {
+    right: 0;
+  }
+  50% {
+    right: -100%;
+  }
+}
+@-webkit-keyframes showAbout {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes showAbout {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Project page */
+@-webkit-keyframes showNextProject {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes showNextProject {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.projects {
+    background-color: #F2F4F4;
+    width: 280px;
+    height: 260px;
+    padding: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.projects h3 {
+    text-align: left
+}
+
+.projects h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.projects h3 {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 0
+}
+
+.project-selected {
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#css-quiz-img, #hacker-events-img, #fajitas-ritas-img, #where-to-eat-img {
+    width: 90%;
+}
+
+.live-repo h4, .tech-used h4 {
+    margin-bottom: 8px
+}
+
+.tech-used {
+    padding-bottom: 50px
+}
+
+.work-content .button {
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+
+#work-close-btn {
+    width: 15px;
+    padding: 10px;
+}
+
+i {
+    padding-top: 5px;
+    padding-right: 5px
+}
+
+.project-selected p {
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Raleway', sans-serif
+}
+
+
+
+
